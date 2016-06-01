@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.5/css/bootstrap-dialog.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.5/js/bootstrap-dialog.min.js"> </script>
+    <style type="text/css">
+        @import url("css/login.css");
+    </style>
+    <script src="js/login.js"></script>
+</head>
+<body>
+<div>
+    <div class="connexionTitle">
+        <p>Connection page</p>
+    </div>
+    <div class="container-fluid">
+        <span class="SkipIntro"><i class="glyphicon glyphicon-share-alt"></i>Connect with $GITHUB_TOKEN env variable</span>
+        <div class="row box">
+            <div class="mod-md-12">
+                <p>Please enter you github Token ID</p>
+                <a href="https://github.com/settings/tokens">Click-here to generate one</a>
+            </div>
+            <div class="col-md-12">
+                <input id="userToken" placeholder="Github Token">
+                
+                </input>
+            </div>
+            <button type="button" class="btn btn-primary loginButton">Login</button>
+            <span><div class="loader">Loading...</div></span>
+        </div>
+    </div>
+</div>
+</body>
+</html>

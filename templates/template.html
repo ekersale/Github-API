@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div>
+    <h1 style="text-align:center; margin-bottom: 5%;">Glo2003 - Projects explorer</h1>
+    <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12" style="width: 80%; margin:auto; margin-left:14%; margin-right:10%; text-align:center;">
+        {{range .objects}}
+        <div class="col-md-3 col-sm-4 col-xs-4 col-lg-3 text-center center-block" style="width: 350px; min-height: 500px; max-height:500px; overflow-y: scroll; margin:auto; margin:10px; border: 1px solid; padding: 0;">
+            <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12" style="background: black; color: white; height: 50px; text-align: center;">
+                <div style="display: flex !important; align-items: center; justify-content: center; left: 0; right: 0; top: 0; bottom: 0; font-size: 15px; margin: auto; height: 100%;">
+                    {{ .Name }}
+                </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12" style="display: block; border-radius: 6px; background: red; width: 80%; height: auto; margin:10%; ">
+                <ul style="margin-right: 4px;">
+                    {{range .OpenIssues}}
+                    <li>{{.Title}}</li>
+                    {{end}}
+                </ul>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12" style="display: block; width: 100%; height: auto; text-align: left;">
+                <p>Repository status : {{.RepoStatus}}</p>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12" style="display: block; width: 100%; height: auto; text-align: left;">
+                <p>Branches</p>
+                <ul>
+                    {{range $key, $value := .Branches}}
+                    <li>{{.Name}}</li>
+                    {{end}}
+                </ul>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12" style="display: block; width: 100%; height: auto; text-align: left;">
+                <p>Languages</p>
+                <ul>
+                    {{range $key, $value := .Languages}}
+                    <li>{{$key}} : {{$value}}</li>
+                    {{end}}
+                </ul>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12" style="display: block; width: 100%; height: auto; text-align: left;">
+                <p>Contributors</p>
+                <ul>
+                    {{range .Contributors}}
+                    <li><img src="{{.AvatarURL}}" style="width:40px;"><a href="{{.HTMLURL}}"> {{.Login}} </a></li>
+                    {{end}}
+                </ul>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12" style="display: block; width: 100%; height: auto; text-align: center;">
+                <a href="{{.CloneURL}}" class="btn btn-info" role="button" style="width: 100%; margin-bottom: 5px;">Github Page</a>
+            </div>
+        </div>
+        {{end}}
+    </div>
+</div>
+</body>
+</html>

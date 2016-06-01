@@ -1,0 +1,16 @@
+{
+  "name": "team10 heroku integration",
+  "description": "This application retrieve github repos",
+  "keywords": [
+    "productivity",
+    "go",
+    "github"
+  ],
+  "repository": "https://github.com/glo2003/team10",
+  "image": "heroku/go",
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-go"
+    }
+  ]
+}
