@@ -2,7 +2,7 @@ package models
 
 import "fmt"
 import "strconv"
-import mgithub "github.com/glo2003/Team10/modules/github"
+import mgithub "github.com/ekersale/Github-API/modules/github"
 import "github.com/google/go-github/github"
 import "strings"
 
