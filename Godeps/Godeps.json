@@ -1,5 +1,5 @@
 {
-	"ImportPath": "github.com/glo2003/team10",
+	"ImportPath": "github.com/ekersale/Github-API",
 	"GoVersion": "go1.5",
 	"Deps": [
 		{
