@@ -39,7 +39,8 @@ func NewServer() Server {
 }
 
 func (s *server) Run() {
-	s.r.Run()
+	port := os.Getenv("PORT")
+	s.r.Run(':' + port)
 }
 
 func Cors() gin.HandlerFunc {
