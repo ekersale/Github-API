@@ -23,37 +23,37 @@
 			"Rev": "52fcc5dbf6e94df33ad313858fb94b713e9d1b4a"
 		},
 		{
-			"ImportPath": "github.com/glo2003/Team10/models",
+			"ImportPath": "github.com/ekersale/Github-API/models",
 			"Comment": "remise-2-11-ga2de004",
 			"Rev": "a2de0045d2b6868bd4d4b873f16baa9f7ff43317"
 		},
 		{
-			"ImportPath": "github.com/glo2003/Team10/modules/github",
+			"ImportPath": "github.com/ekersale/Github-API/modules/github",
 			"Comment": "remise-2-11-ga2de004",
 			"Rev": "a2de0045d2b6868bd4d4b873f16baa9f7ff43317"
 		},
 		{
-			"ImportPath": "github.com/glo2003/Team10/modules/middleware/logger",
+			"ImportPath": "github.com/ekersale/Github-API/modules/middleware/logger",
 			"Comment": "remise-2-11-ga2de004",
 			"Rev": "a2de0045d2b6868bd4d4b873f16baa9f7ff43317"
 		},
 		{
-			"ImportPath": "github.com/glo2003/Team10/modules/middleware/recovery",
+			"ImportPath": "github.com/ekersale/Github-API/modules/middleware/recovery",
 			"Comment": "remise-2-11-ga2de004",
 			"Rev": "a2de0045d2b6868bd4d4b873f16baa9f7ff43317"
 		},
 		{
-			"ImportPath": "github.com/glo2003/Team10/modules/web",
+			"ImportPath": "github.com/ekersale/Github-API/modules/web",
 			"Comment": "remise-2-11-ga2de004",
 			"Rev": "a2de0045d2b6868bd4d4b873f16baa9f7ff43317"
 		},
 		{
-			"ImportPath": "github.com/glo2003/Team10/routers/home",
+			"ImportPath": "github.com/ekersale/Github-API/routers/home",
 			"Comment": "remise-2-11-ga2de004",
 			"Rev": "a2de0045d2b6868bd4d4b873f16baa9f7ff43317"
 		},
 		{
-			"ImportPath": "github.com/glo2003/Team10/routers/projects",
+			"ImportPath": "github.com/ekersale/Github-API/routers/projects",
 			"Comment": "remise-2-11-ga2de004",
 			"Rev": "a2de0045d2b6868bd4d4b873f16baa9f7ff43317"
 		},
