@@ -39,7 +39,7 @@ func NewServer() Server {
 }
 
 func (s *server) Run() {
-	s.r.Run("8080")
+	s.r.Run()
 }
 
 func Cors() gin.HandlerFunc {
