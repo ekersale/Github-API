@@ -4,8 +4,8 @@ import (
 	"net/http"
 	log "github.com/Sirupsen/logrus"
 	"github.com/gin-gonic/gin"
-	"github.com/glo2003/Team10/models"
-    "github.com/glo2003/Team10/modules/github"
+	"github.com/ekersale/Github-API/models"
+    	"github.com/ekersale/Github-API/modules/github"
 )
 
 func IndexHandler(c *gin.Context) {
