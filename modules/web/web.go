@@ -1,10 +1,10 @@
 package web
 
 import (
-	"github.com/glo2003/Team10/modules/middleware/logger"
-	"github.com/glo2003/Team10/modules/middleware/recovery"
-	"github.com/glo2003/Team10/routers/home"
-	"github.com/glo2003/Team10/routers/projects"
+	"github.com/ekersale/Github-API/modules/middleware/logger"
+	"github.com/ekersale/Github-API/modules/middleware/recovery"
+	"github.com/ekersale/Github-API/routers/home"
+	"github.com/ekersale/Github-API/routers/projects"
 	"github.com/gin-gonic/gin"
 )
 
