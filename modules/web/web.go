@@ -6,7 +6,6 @@ import (
 	"github.com/ekersale/Github-API/routers/home"
 	"github.com/ekersale/Github-API/routers/projects"
 	"github.com/gin-gonic/gin"
-	"os"
 )
 
 type Server interface {
@@ -40,8 +39,7 @@ func NewServer() Server {
 }
 
 func (s *server) Run() {
-	port := os.Getenv("PORT")
-	s.r.Run(':' + port)
+	s.r.Run("8080")
 }
 
 func Cors() gin.HandlerFunc {
