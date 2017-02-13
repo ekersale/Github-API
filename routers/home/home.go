@@ -2,7 +2,7 @@ package home
 
 import (
 	"net/http"
-    "github.com/glo2003/Team10/models"
+    	"github.com/ekersale/Github-API/models"
 	"github.com/gin-gonic/gin"
     log "github.com/Sirupsen/logrus"
 )
